@@ -499,7 +499,7 @@
 
 /* About Style */
 .about-bg {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/about-overlay.jpg');
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/about1.jpg')!important;
     background-size: cover;
     background-position: center;
     height: 512px;
