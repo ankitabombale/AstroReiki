@@ -460,6 +460,7 @@
     width: 70%;
 }
 .bg-hero {
+    /* background-image: url('../img/bg6_imresizer.jpg'); */
     background-image: url('../img/bg6_imresizer.jpg');
     background-size: cover;
 }
@@ -505,7 +506,7 @@
 
 /* About Style */
 .about-bg {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/about1.jpg')!important;
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/bg-1.jpg')!important;
     background-size: cover;
     background-position: center;
     height: 512px;
