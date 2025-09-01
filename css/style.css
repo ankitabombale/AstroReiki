@@ -461,13 +461,19 @@
 }
 .bg-hero {
     background-image: url('../img/bg6_imresizer.jpg');
-    /* background: red !important; */
     background-size: cover;
 }
 .overlay-hero {
-    /* background-color: rgba(17, 32, 21, 0.6);  */
+     background-color: rgba(17, 32, 21, 0.6)!important; 
     padding-bottom: 100px; 
 }
+.bg-darker {
+  background-color: #063; /* Dark green */
+  margin-top: 0 !important;
+  padding-top: 40px;   /* Adjust as needed */
+  padding-bottom: 40px;
+}
+
 .border-hero {
     border-bottom: 1px solid #c4c4c4;
 }
