@@ -142,7 +142,7 @@
     }
     .text-subtitle {
         font-family: 'Philosopher';
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 500;
         line-height: 1,2;
         letter-spacing: -0.8px;
@@ -442,7 +442,7 @@
     width: 1220px;
 }
 .hero-title {
-    width: 73%;
+    width: 75%;
 }
 
 
@@ -756,16 +756,15 @@
 /* Video Style */
 .video-wrapper {
   position: relative;
-  height: auto;
-  padding: 0;
+    padding-top: 56.25%;
 }
-/* .video-wrapper iframe {
+.video-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-} */
+}
 
 
 /* Team Style */
@@ -1033,8 +1032,8 @@
     margin: 10px 0; 
 }
 .footer-logo {
-    width: 120px;
-    height: 120px;
+    width: 224px;
+    height: 56px;
     object-fit: cover;
 }
 .subtext-footer {
