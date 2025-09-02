@@ -506,7 +506,7 @@
 
 /* About Style */
 .about-bg {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/about1.jpg')!important;
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/services.jpg');
     background-size: cover;
     background-position: center;
     height: 512px;
@@ -564,7 +564,7 @@
 
 /* Choose Us Style */
 .bg-choose-us {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/image5.jpg');
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/whyus.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -582,28 +582,49 @@
 
 /* Services Style */
 .bg-service-1 {
-    background-image: url('../img/service-1.jpg');
+    background-image: url('../img/spiritfire.jpg');
     min-height: 455px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 .bg-service-2 {
-    background-image: url('../img/service-2.jpg');
+    background-image: url('../img/money.jpg');
     min-height: 455px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 .bg-service-3 {
-    background-image: url('../img/service-3.jpg');
+    background-image: url('../img/magic.jpg');
     min-height: 455px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 .bg-service-4 {
-    background-image: url('../img/service-4.jpg');
+    background-image: url('../img/kundalini.jpg');
+    min-height: 455px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.bg-service-5 {
+    background-image: url('../img/money.jpg');
+    min-height: 455px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.bg-service-6 {
+    background-image: url('../img/magic.jpg');
+    min-height: 455px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.bg-service-7 {
+    background-image: url('../img/kundalini.jpg');
     min-height: 455px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1032,8 +1053,8 @@
     margin: 10px 0; 
 }
 .footer-logo {
-    width: 224px;
-    height: 56px;
+    width:150px;
+    height: 150px;
     object-fit: cover;
 }
 .subtext-footer {
@@ -1292,7 +1313,7 @@
         width: 100%;
     }
     .about-bg {
-        background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('img/about-overlay.jpg');
+        background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/services.jpg');
         background-size: cover;
         background-position: center;
         height: 400px;
