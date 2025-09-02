@@ -55,25 +55,54 @@
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body d-lg-flex justify-content-center">
-            <ul class="navbar-nav gap-3">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+              <ul class="navbar-nav gap-3">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <button
+                    class="nav-link"
+                    id="serviceDropdown"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Healing Services
+                    <i class="fa-solid fa-angle-down ms-1"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                    <li>
+                      <a class="dropdown-item" href="services.html">Services</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="services-detail.html"
+                        >Service Detail</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="learning.html">Learning</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog-post.html">Blogs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Healing Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Learning</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="about.html">Blogs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact </a>
-              </li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-none d-lg-flex">
+            <a href="contact.html" class="btn-light"> Make Appointment </a>
+          </div>
+        </div>
+      </nav>
               <!-- <li class="nav-item dropdown">
                   <button
                     class="nav-link"
@@ -141,14 +170,7 @@
                     </li>
                   </ul>
                 </li> -->
-            </ul>
-          </div>
-        </div>
-        <div class="d-none d-lg-flex">
-          <a href="contact.html" class="btn-light"> Make Appointment </a>
-        </div>
-      </div>
-    </nav>
+          
     <!-- Navbar End -->
     <!-- Banner Start -->
     <div class="width-base">
@@ -412,7 +434,7 @@
           <div class="card ">
             <div class="card-body">
               <p class="text-subtitle c-semi-black c-main">02</p>
-              <p class="text-subtitle c-semi-black">Kundalini Reiki–Levels 1–3<br><br></p>
+              <p class="text-subtitle c-semi-black">Kundalini Reiki–Levels 1–3<br><br><br></p>
               <!-- <p class="text-grey">
                     Based on your dosha (body constitution) and consultation, we
                     create a tailored plan
@@ -461,7 +483,7 @@
           <div class="card ">
             <div class="card-body">
               <p class="text-subtitle c-semi-black c-main">06</p>
-              <p class="text-subtitle c-semi-black">Money Reiki– Practitioner to Grand Master</p>
+              <p class="text-subtitle c-semi-black">Money Reiki– Practitioner to Grand Master<br><br></p>
               <!-- <p class="text-grey">
                     Based on your dosha (body constitution) and consultation, we
                     create a tailored plan
@@ -473,7 +495,7 @@
           <div class="card ">
             <div class="card-body">
               <p class="text-subtitle c-semi-black c-main">07</p>
-              <p class="text-subtitle c-semi-black">Ethereal Crystals–Levels 1–3<br><br></p>
+              <p class="text-subtitle c-semi-black">Ethereal Crystals–Levels 1–3<br><br><br></p>
               <!-- <p class="text-grey">
                     Based on your dosha (body constitution) and consultation, we
                     create a tailored plan
@@ -516,7 +538,7 @@
             </div>
           </div>
         </div> -->
-        <div class="col-12 mx-auto d-flex flex-column justify-content-between  pt-5 pt-lg-0 fade-in">
+        <div class="w-100 mx-auto d-flex flex-column justify-content-between pt-5 pt-lg-0 fade-in text-center visible">
           <div>
             <div>
               <span class="icon-circle-1-main"><i class="fa-solid fa-plus c-main"></i></span>
@@ -524,50 +546,29 @@
             </div>
             <!-- <div class="title-about c-semi-black mt-4"> Sanctuary for Ayurvedic Healing and Wellness </div> -->
           </div>
-          <!-- <span class="text-grey">At Wivana, we embrace authentic Ayurveda to nurture holistic wellness, empowering you to find balance and rejuvenation in life</span> -->
-          <div class="d-block d-lg-flex">
-            <div class="d-flex align-items-center ">
-              <span class="icon-circle-17-main me-3"><i class="fa-solid fa-check"></i></span>
-              <!-- </div>
-            <div> -->
-              <span class="c-semi-black my-1">Personalized attunement</span>
-              <!-- <br /> -->
-              <!-- <p class="text-grey my-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p> -->
+          <div class="d-block d-lg-flex align-items-center mx-auto">
+            <div class="d-flex ">
+              <span class="icon-circle-17-main me-3 mt-2"><i class="fa-solid fa-check"></i></span>
+              <span class="c-semi-black my-1 me-5">Personalized attunement</span>
             </div>
-          </div>
-          <div class="dblock d-lg-flex">
-            <div class="d-flex align-items-center ">
-              <span class="icon-circle-17-main me-3"><i class="fa-solid fa-check"></i></span>
-              <!-- </div>
-            <div> -->
+            <div class="d-flex ">
+              <span class="icon-circle-17-main me-3  mt-2"><i class="fa-solid fa-check"></i></span>
               <span class="c-semi-black my-1 ">Comprehensive manuals</span>
-              <!-- <br /> -->
-              <!-- <p class="text-grey my-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p> -->
             </div>
           </div>
-          <div class="dblock d-lg-flex">
-            <div class="d-flex align-items-center ">
-              <span class="icon-circle-17-main me-3"><i class="fa-solid fa-check"></i></span>
-              <!-- </div>
-            <div> -->
-              <span class="c-semi-black my-1 ">Certificate of completion</span>
-              <!-- <br /> -->
-              <!-- <p class="text-grey my-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p> -->
+          <div class="dblock d-lg-flex align-items-center mx-auto">
+            <div class="d-flex ">
+              <span class="icon-circle-17-main me-3  mt-2"><i class="fa-solid fa-check"></i></span>
+              <span class="c-semi-black my-1 me-5">Certificate of completion</span>
             </div>
-          </div>
-          <div class="dblock d-lg-flex">
-            <div class="d-flex align-items-center ">
-              <span class="icon-circle-17-main me-3"><i class="fa-solid fa-check"></i></span>
-              <!-- </div>
-            <div> -->
+            <div class="d-flex ">
+              <span class="icon-circle-17-main me-3  mt-2"><i class="fa-solid fa-check"></i></span>
               <span class="c-semi-black my-1 ">Post-course lifetime support </span>
-              <!-- <br /> -->
-              <!-- <p class="text-grey my-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. </p> -->
             </div>
           </div>
         </div>
-      </div>
-    </div>
+        </div>
+        </div>
     <p class="c-semi-black text-center my-4 mx-auto w-75 fs-18">Whether you are a beginner or an advanced spiritual seeker, I’ll meet you where you are-with patience, clarity, and compassion. </p>
   </div>
   <!-- Couses I tech end -->
