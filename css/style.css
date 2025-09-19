@@ -461,7 +461,7 @@
 }
 .bg-hero {
     /* background-image: url('../img/bg6_imresizer.jpg'); */
-    background-image: url('../img/bg-1.jpg');
+    background-image: url('../img/Astro_Background.png');
     background-size: cover;
 }
 .overlay-hero {
@@ -511,6 +511,68 @@
     background-position: center;
     height: 512px;
 }
+.about-bg1 {
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Spirit_Fire_Reiki_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 512px;
+}
+.about-bg2 {
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Money_Reiki_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 512px;
+}
+.about-bg3 {
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Kundalini_Reiki_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 512px;
+}
+.about-bg4 {
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Humkara_with_Hleem_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 512px;
+}
+.about-bg5 {
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Ethereal_Crytsals_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 512px;
+}
+.about-bg6 {
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Crystal_Healing_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 512px;
+}
+.about-bg7 {
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Usui_reiki_Banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 512px;
+}
+.about-bg8 {
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Lama_Fera_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 512px;
+}
+.about-bg9 {
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Nadi_Astology_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 512px;
+}
+.about-bg10 {
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Learn_Crystal_Healing_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 512px;
+}
+
+
 .img-about {
     border-radius: 10px;
     width: 100%;
@@ -528,6 +590,8 @@
     line-height: 1,2;
     letter-spacing: -1.3px;
 }
+
+
 
 
 
@@ -583,14 +647,14 @@
 
 /* Services Style */
 .bg-service-1 {
-    background-image: url('../img/spiritfire.jpg');
+    background-image: url('../img/Spirit_Fire_Reiki.png');
     min-height: 455px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 .bg-service-2 {
-    background-image: url('../img/money.jpg');
+    background-image: url('../img/Money_Reiki.jpg');
     min-height: 455px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -604,33 +668,65 @@
     position: relative;
 }
 .bg-service-4 {
-    background-image: url('../img/kundalini.jpg');
+    background-image: url('../img/Kundalini_Reiki.jpg');
     min-height: 455px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 .bg-service-5 {
-    background-image: url('../img/money.jpg');
+    background-image: url('../img/Humkara_with_Hleem.jpg');
     min-height: 455px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 .bg-service-6 {
-    background-image: url('../img/magic.jpg');
+    background-image: url('../img/Ethereal_Crytsals.png');
     min-height: 455px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 .bg-service-7 {
-    background-image: url('../img/kundalini.jpg');
+    background-image: url('../img/Crystal_Healing.jpg');
     min-height: 455px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
+.bg-service-8 {
+    background-image: url('../img/Usui_reiki.jpg');
+    min-height: 455px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.bg-service-9 {
+    background-image: url('../img/Lama_Fera.jpg');
+    min-height: 455px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.bg-service-10 {
+    background-image: url('../img/Nadi_Astrology.jpg');
+    min-height: 455px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.bg-service-11 {
+    background-image: url('../img/Learn_Crystal_Healing.jpg');
+    min-height: 455px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+
+
 .custom-card {
     max-width: 35%;
     width: max-content;
@@ -1076,6 +1172,14 @@
 }
 
 
+
+
+
+
+
+
+
+
 /* Media Query */
 @media screen and (max-width: 1220px) {
     .section-m {
@@ -1319,6 +1423,7 @@
         background-position: center;
         height: 400px;
     }
+
     .contact-image {
         border-radius: 10px;
     }
@@ -1339,4 +1444,66 @@
     .dropdown-item:hover {
         color: var(--color-main) !important;
     }
+}
+
+
+/* Mobile-only fixes */
+@media (max-width: 767px) {
+  #contactForm .form-row,
+  #contactForm .row {
+    display: block;
+  }
+
+  #contactForm .form-field,
+  #contactForm .col {
+    width: 100% !important;
+    min-width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  /* Inputs, select, textarea uniform */
+  #contactForm .form-input,
+  #contactForm .form-select,
+  #contactForm .form-textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+
+  /* Submit button full width */
+  #contactForm .form-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 6px;
+  }
+}
+
+
+/* Fix green tick alignment on mobile */
+@media (max-width: 576px) {
+  .icon-circle-37-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;   
+    height: 24px;
+    border: 1px solid var(--color-main); 
+    border-radius: 50%;
+    font-size: 12px; 
+    margin-top: 4px; 
+  }
+
+  .text-subtitle.c-semi-black {
+    font-size: 14px;   
+    line-height: 1.4;
+  }
+}
+/*make clear logo*/
+.navbar-brand img {
+  opacity: 1;
+  filter: brightness(1.2) contrast(1.2); 
 }
