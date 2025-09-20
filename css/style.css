@@ -506,11 +506,12 @@
 
 /* About Style */
 .about-bg {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/services.jpg');
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/about_page_banner.jpg');
     background-size: cover;
     background-position: center;
     height: 512px;
 }
+
 .about-bg1 {
     background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Spirit_Fire_Reiki_banner.jpg');
     background-size: cover;
@@ -572,7 +573,7 @@
     height: 512px;
 }
 .about-bg11 {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/magic_banner.jpg');
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/magic_page_banner.jpg');
     background-size: cover;
     background-position: center;
     height: 512px;
@@ -603,7 +604,7 @@
 
 /* CEO Quote Style */
 .bg-ceo {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/bigbanner.jpg'); 
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/home_page_bigbanner.jpg'); 
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -653,28 +654,28 @@
 
 /* Services Style */
 .bg-service-1 {
-    background-image: url('../img/spiritfirecard.jpg');
+    background-image: url('../img/spirit_card.jpg');
     min-height: 455px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 .bg-service-2 {
-    background-image: url('../img/Money_Reiki_banner.jpg');
+    background-image: url('../img/Money_Reiki.jpg');
     min-height: 455px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 .bg-service-3 {
-    background-image: url('../img/magic.jpg');
+    background-image: url('../img/magic_card.jpg');
     min-height: 455px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 .bg-service-4 {
-    background-image: url('../img/Kundalini_Reiki_banner.jpg');
+    background-image: url('../img/Kundalini_card.jpg');
     min-height: 455px;
     background-size: cover;
     background-repeat: no-repeat;
