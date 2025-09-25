@@ -138,16 +138,45 @@ if (newsletterForm) {
     }, 3000);
   });
 }
+//const contactForm = document.getElementById("contactForm");
+// if (contactForm) {
+//   document
+//     .getElementById("contactForm")
+//     .addEventListener("submit", function (event) {
+//       event.preventDefault();
+//       const popupMessage = document.getElementById("popupMessageContact");
+//       popupMessage.style.display = "block";
+//       setTimeout(() => {
+//         popupMessage.style.display = "none";
+//       }, 3000);
+//     });
+// }
 const contactForm = document.getElementById("contactForm");
 if (contactForm) {
-  document
-    .getElementById("contactForm")
-    .addEventListener("submit", function (event) {
-      event.preventDefault();
-      const popupMessage = document.getElementById("popupMessageContact");
-      popupMessage.style.display = "block";
-      setTimeout(() => {
-        popupMessage.style.display = "none";
-      }, 3000);
-    });
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault(); // stop default submission
+
+    const formData = new FormData(contactForm);
+
+    fetch("contact.php", {
+      method: "POST",
+      body: formData
+    })
+      .then(response => response.text())
+      .then(data => {
+        console.log(data); // debug PHP response
+
+        // Show popup
+        const popupMessage = document.getElementById("popupMessageContact");
+        popupMessage.style.display = "block";
+
+        setTimeout(() => {
+          popupMessage.style.display = "none";
+        }, 3000);
+
+        // Reset form
+        contactForm.reset();
+      })
+      .catch(err => console.error("Error:", err));
+  });
 }

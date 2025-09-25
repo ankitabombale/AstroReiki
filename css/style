@@ -461,7 +461,7 @@
 }
 .bg-hero {
     /* background-image: url('../img/bg6_imresizer.jpg'); */
-    background-image: url('../img/Astro_Background.png');
+    background-image: url('../img/banner_home.jpg');
     background-size: cover;
 }
 .overlay-hero {
@@ -503,14 +503,39 @@
     color-scheme: dark;
 }
 
-
-/* About Style */
-.about-bg {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/services.jpg');
+#service-page{
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/service_page_banner.jpg');
     background-size: cover;
     background-position: center;
     height: 512px;
 }
+#contact-page{
+     background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/banner_contact_page.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 512px;
+}
+#learning-page{
+     background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/learning_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 512px;
+}
+
+#blog-post-page{
+     background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/blog_page_imresizer.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 512px;
+}
+/* About Style */
+#about-page {
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/banner-about-page.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 512px;
+}
+
 .about-bg1 {
     background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Spirit_Fire_Reiki_banner.jpg');
     background-size: cover;
@@ -571,6 +596,12 @@
     background-position: center;
     height: 512px;
 }
+.about-bg11 {
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/magic_page_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 512px;
+}
 
 
 .img-about {
@@ -597,7 +628,7 @@
 
 /* CEO Quote Style */
 .bg-ceo {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/magic.jpg'); 
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Bigbanner.jpg'); 
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -629,7 +660,7 @@
 
 /* Choose Us Style */
 .bg-choose-us {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/whyus.jpg');
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/work.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -647,7 +678,7 @@
 
 /* Services Style */
 .bg-service-1 {
-    background-image: url('../img/Spirit_Fire_Reiki.png');
+    background-image: url('../img/fire_image.jpg');
     min-height: 455px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -661,14 +692,14 @@
     position: relative;
 }
 .bg-service-3 {
-    background-image: url('../img/magic.jpg');
+    background-image: url('../img/magic_card.jpg');
     min-height: 455px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 .bg-service-4 {
-    background-image: url('../img/Kundalini_Reiki.jpg');
+    background-image: url('../img/kundalini_reiki_home.jpg');
     min-height: 455px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1418,7 +1449,7 @@
         width: 100%;
     }
     .about-bg {
-        background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/services.jpg');
+        background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/about_page.jpg');
         background-size: cover;
         background-position: center;
         height: 400px;

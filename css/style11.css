@@ -354,7 +354,6 @@
         margin-right: auto;
     }
 
-
     
 /* Navbar Style */
 .navbar-toggler {
@@ -464,11 +463,7 @@
     /* background-image: url('../img/bg6_imresizer.jpg'); */
     background-image: url('../img/banner_home.jpg');
     background-size: cover;
-     background-repeat: no-repeat;
-    position: relative;
 }
-
-
 .overlay-hero {
      background-color: rgba(17, 32, 21, 0.6)!important; 
     padding-bottom: 100px; 
@@ -761,22 +756,7 @@
 }
 
 
-@media (max-width: 768px) {
-  .bg-service-1,
-  .bg-service-2,
-  .bg-service-3,
-  .bg-service-4,
-  .bg-service-5,
-  .bg-service-6,
-  .bg-service-7,
-  .bg-service-8,
-  .bg-service-9,
-  .bg-service-10,
-  .bg-service-11 {
-    background-image: none !important;
-    min-height: auto !important;
-  }
-}
+
 
 .custom-card {
     max-width: 35%;

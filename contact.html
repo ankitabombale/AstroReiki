@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class="about-bg">
+  <div class="about-bg" id="contact-page">
     <!-- Navbar Start -->
     <div class="container d-none d-lg-flex justify-content-between border-hero">
       <div class="d-flex gap-2 py-2">
@@ -57,12 +57,15 @@
           <div class="offcanvas-body d-lg-flex justify-content-center">
               <ul class="navbar-nav gap-3">
                 <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Home</a>
+                  <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="about.html">About Us</a>
                 </li>
-                <li class="nav-item dropdown">
+                 <li class="nav-item">
+                  <a class="nav-link" href="services.html">Healing Services</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
                   <button
                     class="nav-link"
                     id="serviceDropdown"
@@ -83,7 +86,7 @@
                       >
                     </li>
                   </ul>
-                </li>
+                </li> -->
                 <li class="nav-item">
                   <a class="nav-link" href="learning.html">Learning</a>
                 </li>
@@ -91,7 +94,7 @@
                   <a class="nav-link" href="blog-post.html">Blogs</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link active" href="contact.html">Contact</a>
                 </li>
               </ul>
               </li>
@@ -201,44 +204,52 @@
               <div class="title-about mt-1 mb-4 c-white"> Get in Touch With Astro Reiki </div>
               <p class="text-silver"> Whether you're seeking personal healing, spiritual guidance, or wish to become a certified energy healer, I’m just a call/message away. Feel free to reach out with your questions, course interest, or consultation needs. </p>
             </div>
-            <form class="bg-semi-white p-3 p-lg-4 mt-5 form" action="#" method="post" id="contactForm">
-              <div class="popup-message" id="popupMessageContact">
-                <div>
-                  <i class="fa-solid fa-check fa-2xl"></i>
-                </div> Thank you! The form submitted successfully
-              </div>
-              <div class="form-row">
-                <div class="form-field">
-                  <input type="text" id="firstname" class="form-input" placeholder="first name" required />
-                </div>
-                <div class="form-field">
-                  <input type="text" id="lastname" class="form-input" placeholder="last name" required />
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-field">
-                  <input type="email" id="email" class="form-input" placeholder="your email" required />
-                </div>
-                <div class="form-field">
-                  <input type="number" id="phone" class="form-input" placeholder="phone number" required />
-                </div>
-              </div>
-              <div class="form-row full-width">
-                <div class="form-field">
-                  <textarea id="message" class="form-textarea" rows="4" placeholder="message" required></textarea>
-                </div>
-              </div>
-              <div class="form-row full-width mt-3">
-                <button type="submit" class="form-button">Submit Now</button>
-              </div>
-            </form>
+
+
+
+
+          <form class="bg-semi-white p-3 p-lg-4 mt-5 form" action="contact.php" method="post" id="contactForm">
+  <div class="form-row">
+    <div class="form-field">
+      <input type="text" name="firstname" id="firstname" class="form-input" placeholder="First name" autocomplete="given-name" required>
+    </div>
+    <div class="form-field">
+      <input type="text" name="lastname" id="lastname" class="form-input" placeholder="Last name" autocomplete="family-name" required>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-field">
+      <input type="email" name="email" id="email" class="form-input" placeholder="Your email" autocomplete="email" required>
+    </div>
+    <div class="form-field">
+      <input type="tel" name="phone" id="phone" class="form-input" placeholder="Phone number" autocomplete="tel" required>
+    </div>
+  </div>
+  <div class="form-row full-width">
+    <div class="form-field">
+      <textarea name="message" id="message" class="form-textarea" rows="4" placeholder="Message" autocomplete="off" required></textarea>
+    </div>
+  </div>
+
+  <div id="popupMessageContact" style="display:none; color: green; margin-top: 10px;">
+    ✅ Thank you! Your message has been submitted.
+  </div>
+
+  <div class="form-row full-width mt-3">
+    <button type="submit" class="form-button">Submit Now</button>
+  </div>
+</form>
+
+
+
+            
             <br>
             <p style="color: #fff;" class="border-bottom pb-2">I aim to respond within 24 hours.</p>
             <p style="color: #fff;"><b>Let’s walk the path of healing, protection, and spiritual growth together.</b></p>
             <p style="color: #fff;">Your transformation begins with one message.</p>
           </div>
           <div class="col px-0 position-relative">
-            <img src="img/contact-page-image.jpg" alt="contact" class="w-100 h-100 contact-image" />
+            <img src="img/contact_us_main.jpg" alt="contact" class="w-100 h-100 contact-image" />
             <div class="contact-card">
               <div class="card-body bg-semi-white">
                 <div class="d-flex flex-column gap-3">
@@ -531,8 +542,8 @@
     </div>
     <!-- FAQS End -->
     <!-- Footer Start -->
-    <div class="bg-darker w-100">
-      <div class="width-base">
+    <div class="bg-darker w-100" style="padding-top: 0px !important; padding-bottom: 0px !important;">
+    <div class="width-base" id="footer-base" style="padding-top: 0px !important; padding-bottom: 0px !important;" >
         <div class="container px-0 footer-padding">
           <div class="row row-cols-1 row-cols-lg-2 g-3">
             <div class="col">
@@ -669,7 +680,9 @@
     <!-- Footer End -->
     <script src="lib/js/bootstrap.bundle.min.js"></script>
     <script src="lib/js/swiper-bundle.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/index.js"></script>>
+
+
 </body>
 
 </html>
