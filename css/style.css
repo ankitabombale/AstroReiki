@@ -147,11 +147,11 @@
         line-height: 1,2;
         letter-spacing: -0.8px;
     }
-    .text-grey {
+    /* .text-grey {
         font-family: 'Lato';
         font-size: 16px;
         color: var(--text-color-1);
-    }
+    } */
     .text-white {
         font-family: 'Lato';
         font-size: 16px;
@@ -582,13 +582,13 @@
     height: 512px;
 }
 .about-bg6 {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Crystal_Healing_banner.jpg');
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Learn\ Crystal\ Healin..._imresizer.jpg');
     background-size: cover;
     background-position: center;
     height: 512px;
 }
 .about-bg7 {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Usui_reiki_Banner.jpg');
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/usai-banner.jpg');
     background-size: cover;
     background-position: center;
     height: 512px;
@@ -600,7 +600,7 @@
     height: 512px;
 }
 .about-bg9 {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Nadi_Astology_banner.jpg');
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/nadi-banner.jpg');
     background-size: cover;
     background-position: center;
     height: 512px;
@@ -1515,7 +1515,7 @@
   }
 
   .text-subtitle.c-semi-black {
-    font-size: 14px;   
+    font-size: 19px;   
     line-height: 1.4;
   }
 }
@@ -1524,3 +1524,33 @@
   filter: brightness(1.2) contrast(1.2); 
 }
 
+
+
+/* Keep native date picker icon visible */
+input[type="date"] {
+  -webkit-appearance: menulist-button; 
+  appearance: auto;                     
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+
+.course-content p,
+.course-content ul,
+.course-content li,
+.course-content div {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.course-content ul {
+  list-style-position: inside; /* keeps bullets aligned with text */
+  margin-bottom: 1rem;
+}
+
+.course-content li {
+  margin: 0.3rem 0;
+}

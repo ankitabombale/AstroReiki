@@ -84,7 +84,7 @@
     <button class="nav-link" id="courseDropdown" data-bs-toggle="dropdown">
       Courses <i class="fa-solid fa-angle-down ms-1"></i>
     </button>
-    <ul class="dropdown-menu">
+    <ul class="dropdown-menu" id="courseDropdownMenu">
       <li><a class="dropdown-item" href="./services/crystal-healing-learn.html">Learn Crystal Healing</a></li>
       <li><a class="dropdown-item" href="./services/crystal-healing.html">Crystal Healing</a></li>
       <li><a class="dropdown-item" href="./services/ethereal-crystals.html">Ethereal Crystals</a></li>
@@ -671,6 +671,21 @@
     </div>
     </footer>
     <!-- footer end -->
+         <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menu = document.getElementById("courseDropdownMenu");
+    const items = Array.from(menu.querySelectorAll("li"));
+
+    // Sort list items alphabetically based on link text
+    items.sort((a, b) =>
+      a.textContent.trim().localeCompare(b.textContent.trim())
+    );
+
+    // Clear and re-append sorted items
+    menu.innerHTML = "";
+    items.forEach(item => menu.appendChild(item));
+  });
+</script>
     <script src="lib/js/bootstrap.bundle.min.js"></script>
     <script src="lib/js/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
