@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="../css/border.css" />
   </head>
 
-    <div class="about-bg10">
       <!-- Navbar Start -->
       <div
         class="container d-none d-lg-flex justify-content-between border-hero"
@@ -102,7 +101,6 @@
       <li><a class="dropdown-item" href="humkara-with-haleem.html">Humkara with Haleem Healing</a></li>
       <li><a class="dropdown-item" href="lama-fera.html">Lama Fera Healing</a></li>
       <li><a class="dropdown-item" href="nadi-astrology.html">Nadi Astrology</a></li>
-      <li><a class="dropdown-item" href="usui-reiki-courses.html">Reiki Healing</a></li>
     </ul>
   </li>
 
@@ -113,16 +111,14 @@
     </button>
     <ul class="dropdown-menu" id="courseDropdownMenu">
       <li><a class="dropdown-item active" href="crystal-healing-learn.html">Learn Crystal Healing</a></li>
-      <li><a class="dropdown-item" href="crystal-healing.html">Crystal Healing</a></li>
       <li><a class="dropdown-item" href="ethereal-crystals.html">Ethereal Crystals</a></li>
       <li><a class="dropdown-item" href="humkara-with-haleem.html">Humkara with Haleem Healing</a></li>
       <li><a class="dropdown-item" href="kundalini-reiki.html">Kundalini Reiki</a></li>
       <li><a class="dropdown-item" href="lama-fera.html">Lama Fera Healing</a></li>
       <li><a class="dropdown-item" href="magic-reiki.html">Magic Reiki</a></li>
       <li><a class="dropdown-item" href="money-reiki.html">Money Reiki</a></li>
-      <li><a class="dropdown-item" href="nadi-astrology.html">Nadi Astrology</a></li>
       <li><a class="dropdown-item" href="spirit-fire-reiki.html">Spirit Fire Reiki</a></li>
-      <li><a class="dropdown-item" href="usui-reiki-courses.html">Usui Reiki Courses</a></li>
+      <li><a class="dropdown-item" href="usui-reiki-courses.html">Usui Reiki</a></li>
     </ul>
   </li>
 
@@ -146,6 +142,7 @@
         </div>
       </nav>
       <!-- Navbar End -->
+     <div class="about-bg10">
 
       <!-- Banner Start -->
       <div class="width-base">
@@ -173,9 +170,8 @@
             </div>
           </div>
         </div>
-      </div>
+      </div></div>
       <!-- Banner End -->
-    </div>
 <!-- Services Detail Start -->
 <!-- Services Detail Start -->
 <div class="bg-subtle">
@@ -266,7 +262,7 @@ after use. You'll learn multiple methods, including:</p>
       <div class="row row-cols-1 row-cols-lg-2 g-4 my-lg-2">
         <div class="col">
           <div class="form-field">
-            <input type="date" id="date" class="form-input c-grey" style="color-scheme: light" required />
+            <input type="text" id="date" class="form-input c-grey" style="color-scheme: light" required />
           </div>
         </div>
         <!-- <div class="col">
@@ -418,7 +414,7 @@ after use. You'll learn multiple methods, including:</p>
     </div> -->
     <!-- Video End -->
     <!-- FAQS Start -->
-    <div class="bg-semi-white w-100">
+    <!-- <div class="bg-semi-white w-100">
       <div class="width-base">
         <div class="container px-0">
           <div class="row row-cols-1 row-cols-lg-2">
@@ -607,7 +603,7 @@ after use. You'll learn multiple methods, including:</p>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- FAQS End -->
     <!-- Footer Start -->
    <div class="bg-darker w-100" style="padding-top: 0px !important; padding-bottom: 0px !important;">
@@ -689,7 +685,7 @@ after use. You'll learn multiple methods, including:</p>
             <div>
               <h3 class="text-subtitle c-white mb-3 mb-lg-4 mt-5 mt-lg-0"> Address </h3>
               <div>
-                <p class="text-silver pe-5"> Based in Pune / PCMC </p>
+                <p class="text-silver pe-5">Mayureshwar, Pimple Saudagar, Pune - 411027 </p>
               </div>
             </div>
             <div>
@@ -742,6 +738,21 @@ after use. You'll learn multiple methods, including:</p>
     // Clear and re-append sorted items
     menu.innerHTML = "";
     items.forEach(item => menu.appendChild(item));
+  });
+</script>
+<script>
+  window.addEventListener("load", function () {
+    const dateField = document.getElementById("date");
+    if (dateField) {
+      const today = new Date();
+      const yyyy = today.getFullYear();
+      const mm = String(today.getMonth() + 1).padStart(2, "0");
+      const dd = String(today.getDate()).padStart(2, "0");
+      dateField.value = `${yyyy}-${mm}-${dd}`; // Format: YYYY-MM-DD
+      dateField.readOnly = true; // Prevent editing
+    } else {
+      console.warn("⚠️ Date field not found in DOM");
+    }
   });
 </script>
     <script src="../lib/js/bootstrap.bundle.min.js"></script>

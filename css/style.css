@@ -10,7 +10,8 @@
     1.6 Color Utility Class               (line 248)
     1.7 Background Utility Class          (line 258)
     1.8 Font Size Utility Class           (line 265)
-    1.9 Width Utility Class               (line 278)
+    1.9 Width Utility Class               (line 278).content-m, .section-m 
+    
     1.10 Button Style                     (line 290)
         1.10.1 Navbar Button              (line 312)
     1.11 Default Width                    (line 332)
@@ -344,11 +345,15 @@
             border: none !important;
         }
 
+.nav-link.active {
+  color: #f39c12 !important; /* choose your highlight color */
+  font-weight: 400;
+}
 
     .width-base {
         width: 1220px;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 68px!important;
+  padding-bottom: 58px !important;
         margin-left: auto;
         margin-right: auto;
     }
@@ -444,6 +449,104 @@
     width: 75%;
 }
 
+/* === FIX WHITE SPACE AND NAVBAR COLOR === */
+
+/* Make navbar compact and visible */
+/* ===== MINIMIZE WHITE PATCH BELOW NAVBAR ===== */
+
+/* Compact, clean navbar */
+.navbar,
+.main-navbar {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  margin: 0 !important;
+  line-height: 1.1;
+  backdrop-filter: blur(8px);
+}
+
+/* Navbar links color + spacing */
+.nav-link {
+  color: #212529 !important;
+  font-weight: 500;
+  padding: 6px 10px !important;
+}
+
+.nav-link:hover {
+  color: #f39c12 !important;
+}
+
+/* Optional: tighter top contact bar */
+.top-contact-bar {
+  padding: 2px 0 !important;
+  font-size: 12px;
+}
+
+
+
+/* Remove overlay’s extra padding (was creating gap) */
+.overlay-hero {
+  background-color: rgba(17, 32, 21, 0.6) !important;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Make hero image start immediately after navbar */
+.bg-hero {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Reduce section top spacing site-wide */
+.content-m,
+.section-m {
+  margin-top: 1rem !important;
+}
+
+/* === Top Contact Bar Fix === */
+.border-hero {
+  background-color: #ffffff !important; /* keep white */
+  color: #000000 !important; /* make all text black */
+}
+
+/* Icons (Facebook, Instagram, etc.) */
+.border-hero .icon-circle-32 i {
+  color: #000 !important;
+}
+
+/* Email & phone text */
+.border-hero .c-white,
+.border-hero .fs-13 {
+  color: #000 !important;
+}
+
+/* Optional: subtle gray border below */
+.border-hero {
+  border-bottom: 1px solid #ccc;
+}
+/* === Add space below hero section === */
+.overlay-hero {
+  padding-bottom: 140px !important; /* previously 100px — increase for better spacing */
+}
+
+/* Optional: add a little separation below the form area */
+.form-container {
+  margin-bottom: 50px;
+}
+
+/* Optional: add a small gap before next section starts */
+.bg-hero {
+  margin-bottom: 30px;
+}
+.navbar {
+  position: relative; /* or fixed if you want sticky top nav */
+  z-index: 10;
+}
+
+
+
+
+
 
 .banner-title {
     width: 100%;
@@ -513,7 +616,7 @@
     height: 512px;
 }
 #contact-page{
-     background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/banner_contact_page.jpg');
+     background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/contactastro-12.jpg');
     background-size: cover;
     background-position: center;
     height: 512px;
@@ -532,10 +635,11 @@
     height: 512px;
 }
 #about-page {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/banner-about-page.jpg');
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/about-13-img.jpg');
     background-size: cover;
     background-position: center;
-    height: 512px;
+   height: 512px;
+   
 }
 #review-page {
     background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/review-page-banner.jpg');
@@ -552,7 +656,7 @@
 }
 
 .about-bg1 {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Spirit_Fire_Reiki_banner.jpg');
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Spirit-Fire-Reiki-imresizer-16.jpg');
     background-size: cover;
     background-position: center;
     height: 512px;
@@ -564,13 +668,13 @@
     height: 512px;
 }
 .about-bg3 {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Kundalini_Reiki_banner.jpg');
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Humkara-Hleem-15_imresizer.jpg');
     background-size: cover;
     background-position: center;
     height: 512px;
 }
 .about-bg4 {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/reiki-kundali.jpg');
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/kundalini-reiki-img_imresizer.jpg');
     background-size: cover;
     background-position: center;
     height: 512px;
@@ -582,13 +686,13 @@
     height: 512px;
 }
 .about-bg6 {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Learn\ Crystal\ Healin..._imresizer.jpg');
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/cryst-heal-14.jpg');
     background-size: cover;
     background-position: center;
     height: 512px;
 }
 .about-bg7 {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/usai-banner.jpg');
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/Usui-reiki-15.jpg');
     background-size: cover;
     background-position: center;
     height: 512px;
@@ -641,6 +745,7 @@
     width: 100%;
     background-size: cover;
     background-position: center;
+    margin-bottom: -24px !important;
 }
 .ceo-quote {
     margin: auto;
@@ -1523,6 +1628,7 @@
   opacity: 1;
   filter: brightness(1.2) contrast(1.2); 
 }
+
 
 
 
