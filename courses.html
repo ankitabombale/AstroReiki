@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services - Wivana</title>
-    <link rel="icon" type="image/x-icon" href="icon/favicon.ico" />
+    <title>AstroReiki</title>
+    <link rel="icon" type="image/x-icon" href="./img/astrologo-removebg-preview.png" />
     <link href="lib/css/bootstrap.min.css" rel="stylesheet" />
     <link href="lib/css/fontawesome.css" rel="stylesheet" />
     <link rel="stylesheet" href="lib/css/swiper-bundle.min.css" />
@@ -47,7 +47,26 @@
           </div>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg navbar-dark lato">
+      
+<div class="container-fluid d-flex d-lg-none justify-content-between align-items-center small-topbar px-3 py-2">
+  <div class="d-flex gap-3">
+    <a href="#" class="text-white fs-6"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#" class="text-white fs-6"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#" class="text-white fs-6"><i class="fa-brands fa-youtube"></i></a>
+    <a href="#" class="text-white fs-6"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+
+  <div class="d-flex gap-3 align-items-center">
+    <a href="mailto:gauravajain312@gmail.com" class="text-white fs-6">
+      <i class="fa-regular fa-envelope"></i>
+    </a>
+    <a href="tel:+919834321492" class="text-white fs-6">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
+</div>
+
+      <nav class="navbar navbar-expand-lg navbar-light lato">
         <div class="container-lg d-flex">
           <a class="navbar-brand ms-0 ms-sm-3 ms-lg-0" href="index.html">
             <img
@@ -79,18 +98,17 @@
             data-bs-scroll="true"
             aria-labelledby="offcanvasNavbar"
           >
-            <div class="offcanvas-header">
-              <button
-                type="button"
-                class="btn-close text-reset"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
+           
             <div class="offcanvas-body d-lg-flex justify-content-center">
                <ul class="navbar-nav gap-3">
   <li class="nav-item">
     <a class="nav-link active" href="index.html">Home</a>
+     <button
+                type="button"
+                class="btn-close text-reset d-lg-none"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="about.html">About Me</a>
@@ -196,7 +214,7 @@
             </div>
           </div>
           <div class="text-grey fade-in">
-            Discover the transformative power of Ayurveda at Wivana, where each
+            Discover the transformative power of Ayurveda, where each
             personalized treatment is designed to restore balance, promote
             healing, and enhance your overall well-being for a vibrant, healthy
             life
@@ -620,7 +638,7 @@
     </div>
     <!-- Why Choose Us End -->
     <!-- FAQS Start -->
-    <div class="bg-semi-white w-100">
+    <!-- <div class="bg-semi-white w-100">
       <div class="width-base">
         <div class="container px-0">
           <div class="row row-cols-1 row-cols-lg-2">
@@ -809,7 +827,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- FAQS End -->
    
      <!-- Footer Start -->
@@ -942,6 +960,14 @@
     items.forEach(item => menu.appendChild(item));
   });
 </script>
+<script>
+document.querySelectorAll('.dropdown-toggle').forEach(function (dropdown) {
+  dropdown.addEventListener('click', function (event) {
+    event.stopPropagation(); // prevents offcanvas from closing
+  });
+});
+</script>
+
     <script src="lib/js/bootstrap.bundle.min.js"></script>
     <script src="lib/js/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>

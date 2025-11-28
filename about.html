@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us</title>
-  <link rel="icon" type="image/x-icon" href="icon/favicon.ico" />
+  <title>AstroReiki</title>
+  <link rel="icon" type="image/x-icon" href="./img/astrologo-removebg-preview.png" />
   <link href="lib/css/bootstrap.min.css" rel="stylesheet" />
   <link href="lib/css/fontawesome.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
@@ -16,20 +16,20 @@
   
     <!-- Navbar Start -->
     <div class="container d-none d-lg-flex justify-content-between border-hero">
-      <div class="d-flex gap-2 py-2">
-        <a href="#" class="icon-circle-32 share" data-share-to="facebook">
-          <i class="fa-brands fa-facebook-f"></i>
-        </a>
-        <a href="#" class="icon-circle-32 share" data-share-to="instagram">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="#" class="icon-circle-32 share" data-share-to="youtube">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-        <a href="#" class="icon-circle-32 share" data-share-to="linkedin">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-      </div>
+       <div class="d-flex gap-2 py-2">
+          <a href="https://facebook.com/GauravAstroReiki" class="icon-circle-32 share" data-share-to="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram.com/gaurav_astroreiki" class="icon-circle-32 share" data-share-to="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <!-- <a href="#" class="icon-circle-32 share" data-share-to="youtube">
+            <i class="fa-brands fa-youtube"></i>
+          </a> -->
+          <a href="https://linkedin.com/company/gauravastroreiki" class="icon-circle-32 share" data-share-to="linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
       <div id="alert-container"></div>
       <div class="d-flex gap-3 align-items-center justify-content-center lato c-white">
         <div>
@@ -40,7 +40,31 @@
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark lato">
+
+
+<div class="container-fluid d-flex d-lg-none justify-content-between align-items-center small-topbar px-3 py-2">
+  <div class="d-flex gap-3">
+    <a href="#" class="text-white fs-6"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#" class="text-white fs-6"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#" class="text-white fs-6"><i class="fa-brands fa-youtube"></i></a>
+    <a href="#" class="text-white fs-6"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+
+  <div class="d-flex gap-3 align-items-center">
+    <a href="mailto:gauravajain312@gmail.com" class="text-white fs-6">
+      <i class="fa-regular fa-envelope"></i>
+    </a>
+    <a href="tel:+919834321492" class="text-white fs-6">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
+</div>
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light lato">
       <div class="container-lg d-flex">
         <a class="navbar-brand ms-0 ms-sm-3 ms-lg-0" href="index.html">
           <img src="img/astrologo-removebg-preview.png" alt="Brand Logo" width="100" height="100" class="d-inline-block align-text-top" />
@@ -51,13 +75,15 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" data-bs-scroll="true" aria-labelledby="offcanvasNavbar">
-          <div class="offcanvas-header">
+          <!-- <div class="offcanvas-header">
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
+          </div> -->
           <div class="offcanvas-body d-lg-flex justify-content-center">
                 <ul class="navbar-nav gap-3">
   <li class="nav-item">
     <a class="nav-link" href="index.html">Home</a>
+      <button type="button" class="btn-close text-reset d-lg-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
   </li>
   <li class="nav-item">
     <a class="nav-link active" href="about.html">About Me</a>
@@ -101,8 +127,8 @@
     <a class="nav-link" href="contact.html">Contact</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="blog-post.html">Blogs</a>
-  </li>
+  <a class="nav-link disabled-link" href="javascript:void(0)">Blogs</a>
+</li>
 </ul>
             </div>
           </div>
@@ -188,7 +214,7 @@
           <h1 class="philosopher banner-title c-white text-center"> About Me </h1>
           <div class="d-flex gap-3 philosopher fs-14 c-silver align-items-center justify-content-center large-padding mt-4">
             <div>HOME</div>
-            <i class="fa-solid fa-arrow-right-long" style="color: #c7c7c7"></i>
+            <i class="arrow fa-solid fa-arrow-right-long"></i>
             <div>ABOUT ME</div>
           </div>
         </div>
@@ -226,7 +252,11 @@
             </div>
             <h2 class="title-about c-semi-black mb-1">Gaurav Jain</h2>
             <p class="text-grey mb-0">
-            <h4> Welcome, and thank you for visiting. My name is Gaurav Jain, and I’m a dedicated energy healer, spiritual mentor, and astrology consultant based in Pune/PCMC, India. With a deep-rooted passion for helping others reclaim peace, purpose, and power, I’ve spent years exploring and mastering powerful energy healing systems from both Eastern and Western traditions. </h4>
+            <h4 class="body-text-welcome"> Welcome, and thank you for visiting. My name is Gaurav Jain,
+               and I’m a dedicated energy healer, spiritual mentor, and astrology 
+               consultant based in Pune/PCMC, India. With a deep-rooted passion for
+                helping others reclaim peace, purpose, and power, I’ve spent years exploring 
+                and mastering powerful energy healing systems from both Eastern and Western traditions. </h4>
             </p>
           </div>
           <!-- <div class="d-block d-lg-flex">
@@ -314,7 +344,7 @@
     <h3 class="text-center c-white mb-1"> Consultations I Offer</h3>
     <p class="c-silver text-center my-4 mx-auto w-75">In addition to healing, I provide spiritually guided consultations to help you navigate life with clarity and confidence. All consultations are available <b>in-person (Pune/PCMC) or online (worldwide).</b></p>
     <p class="text-center c-silver"><b> * Nadi Astrology Consultations<br> * Pendulum Dowsing Consultations </b></p>
-    <p style="text-align: center; color: #fff;">These sessions help identify the root of challenges and offer both insight and remedies.</p>
+    <p class="text-center text-white ">These sessions help identify the root of challenges and offer both insight and remedies.</p>
   </div>
   <!-- Video End -->
   <!-- CEO Quote End -->
@@ -331,7 +361,7 @@
           </span>
         </div>
         <p>Through my journey, I’ve been blessed to learn and offer a wide spectrum of healing systems that work on the <b>physical, emotional, mental, and spiritual levels</b>. I provide spiritually guided consultations to help you navigate life with clarity and confidence. All sessions are available <b>in-person (Pune/PCMC)</b> or online (worldwide). I support clients through:</p>
-        <p class="text-center fs-4"><b>Energy Healing Sessions</b></p>
+<h4 class="text-center energy-title"><b>Energy Healing Sessions</b></h4>
       </div>
       <div class="container fade-in">
         <div class="row row-cols-1 row-cols-sm-3 g-3">
@@ -411,7 +441,7 @@
     </div>
   </div>
   <!-- Couses I teach start -->
-  <div class="bg-subtle w-100 position-relative large-padding" style="background-color:#efefeb; padding:60px 20px;">
+  <div class=" energy bg-subtle w-100 position-relative large-padding p-5 px-3">
     <div class="fade-in">
       <div>
         <!-- <span class="icon-circle-17-main"
@@ -423,7 +453,7 @@
       </div>
       <p class="c-semi-black text-center my-4 mx-auto w-75">I offer training for individuals ready to step into their role as <b>healers, lightworkers, and spiritual guides</b> . All courses are available <b>in-person (Pune/PCMC)</b> or <b>online (worldwide)</b>
       </p>
-      <p class="text-center fs-3"><b>Available Courses</b></p>
+<h4 class="text-center courses-title"><b>Available Courses</b></h4>
     </div>
     <div class="container px-0 my-0">
       <div class="row row-cols-1 row-cols-lg-4 g-3">
@@ -749,156 +779,68 @@
       </div>
     </div> 
   <!-- Team End -->
-  <!-- Footer Start -->
-  <div class="bg-darker w-100" style="padding-top: 0px !important; padding-bottom: 0px !important;">
-    <div class="width-base" id="footer-base" style="padding-top: 0px !important; padding-bottom: 0px !important;" >
-      <div class="container px-0 footer-padding">
-        <div class="row row-cols-1 row-cols-lg-2 g-3">
-          <div class="col">
-            <div>
-              <a href="index.html">
-                <img src="img/astrologo-removebg-preview.png" alt="astroreiki logo" class="footer-logo" />
-              </a>
-            </div>
-            <div class="my-4">
-              <div class="text-silver subtext-footer"> Embrace the power of Ayurveda to restore, balance, revitalize your spirit. </div>
-            </div>
-            <div class="d-flex gap-2 py-2">
-              <span class="icon-circle-32 bg-grey">
-                <i class="fa-brands fa-facebook-f share" data-share-to="facebook"></i>
-              </span>
-              <span class="icon-circle-32 bg-grey share" data-share-to="instagram">
-                <i class="fa-brands fa-instagram"></i>
-              </span>
-              <span class="icon-circle-32 bg-grey share" data-share-to="youtube">
-                <i class="fa-brands fa-youtube"></i>
-              </span>
-              <span class="icon-circle-32 bg-grey share" data-share-to="linkedin">
-                <i class="fa-brands fa-linkedin"></i>
-              </span>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-end align-items-end">
-            <form class="newsletter-container" id="newsletterForm">
-              <h3 class="text-subtitle c-white">Newsletter</h3>
-              <div class="popup-message" id="popupMessage">
-                <div>
-                  <i class="fa-solid fa-check fa-2xl"></i>
-                </div> Thank you! The form submitted successfully
-              </div>
-              <div class="newsletter-form">
-                <input type="email" placeholder="Your Email" class="email-input" />
-                <button type="submit" class="btn-newsletter">
-                  <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 207.99" width="32" height="15">
-                    <defs>
-                      <style>
-                        .cls-1 {
-                          fill: #fff;
-                          stroke-width: 0px;
-                        }
-                      </style>
-                    </defs>
-                    <path class="cls-1" d="M504.66,85.8L422.97,4.11c-5.48-5.48-14.36-5.48-19.83,0-5.48,5.48-5.48,14.36,0,19.83l66.02,66.02H162.65c-7.75,0-14.03,6.27-14.03,14.03s6.27,14.03,14.03,14.03h305.63l-66.05,66.02c-5.48,5.48-5.48,14.36,0,19.83,2.74,2.74,6.33,4.11,9.92,4.11s7.18-1.37,9.92-4.11l82.6-82.57c9.78-9.78,9.78-25.72,0-35.51Z" />
-                    <path class="cls-1" d="M120.87,89.97H14.03c-7.75,0-14.03,6.27-14.03,14.03s6.27,14.03,14.03,14.03h106.84c7.75,0,14.03-6.27,14.03-14.03s-6.27-14.03-14.03-14.03Z" />
-                  </svg>
-                </button>
-              </div>
-            </form>
-          </div>
+ <!-- Footer Start -->
+  
+<footer id="site-footer" class="bg-footer-gradient text-silver ps-4">
+  <div class="container px-0" id="footer-base">
+
+    <!-- TOP ROW: logo (left) + ready text + icons (right) -->
+    <div class="footer-top d-flex flex-column flex-lg-row align-items-start justify-content-between py-4">
+      <!-- logo -->
+      <div class="footer-logo-wrap mb-3 mb-lg-0">
+        <a href="../index.html">
+          <img src="./img/astrologo-removebg-preview.png" alt="logo" class="footer-logo" />
+        </a>
+      </div>
+
+      <!-- right side: text + icons -->
+     <div class="footer-top-right d-flex flex-column align-items-lg-end text-start me-5">
+
+        <div class="subtext-footer mb-3">
+          <h4 class="text-subtitle c-white my-3">
+            <i class="fa-solid fa-phone me-2 fs-16"></i>Ready to Begin?
+          </h4>
+          <div>Let’s explore what’s holding you back—and help you <br> heal, evolve, and shine.</div>
         </div>
-        <div class="row mt-5">
-          <div class="col-12 col-lg-4">
-            <h3 class="text-subtitle c-white mb-4">Let's Connect</h3>
-            <div>
-              <p class="text-silver">WhatsApp/Call: : +91 9834321492 </p>
-              <p class="text-silver">email : gauravajain312@gmail.com</p>
-              <p class="text-silver">instagram : @gaurav_astroreiki</p>
-            </div>
-            <!-- <p class="text-silver mb-4">
-                Our Doors Are Open for Your Healing Journey
-              </p> -->
-            <div class="mb-2">
-              <!-- <i class="fa-regular fa-clock" style="color: #c7c7c7"></i>
-                <span class="text-silver"
-                  >Monday - Friday: 9:00 AM - 8:00 PM</span
-                > -->
-            </div>
-            <div>
-              <!-- <i class="fa-regular fa-clock" style="color: #c7c7c7"></i>
-                <span class="text-silver">Sat - Sun : 9:00AM - 6:00PM</span> -->
-            </div>
-          </div>
-          <div class="col-12 col-lg-3">
-            <div>
-              <h3 class="text-subtitle c-white mb-3 mb-lg-4 mt-5 mt-lg-0">
-                  Address
-                </h3>
-              <div>
-                <p class="text-silver pe-5">
-                   Mayureshwar, Pimple Saudagar, Pune - 411027
-                  </p>
-              </div>
-            </div>
-            <!-- <div>
-              <h3 class="text-subtitle c-white my-4">Contact</h3>
-              <div>
-                <p class="text-silver my-0">+91 9834321492</p>
-                  <p class="text-silver">email : gauravajain312@gmail.com</p>
-              </div>
-            </div> -->
-          </div>
-          <div class="col-12 col-lg-1"></div>
-          <div class="col-12 col-lg-2">
-            <h3 class="text-subtitle c-white mb-0 mb-lg-4 mt-5 mt-lg-0"> Explore </h3>
-            <ul class="footer-links">
-              <li>
-                <a href="index.html" class="text-silver footer-link">Home</a>
-              </li>
-              <li>
-                <a href="about.html" class="text-silver footer-link">About</a>
-              </li>
-              <li>
-                <a href="packages.html" class="text-silver footer-link">Packages</a>
-              </li>
-              <li>
-                <a href="faqs.html" class="text-silver footer-link">FAQS</a>
-              </li>
-              <li>
-                <a href="services.html" class="text-silver footer-link">Services</a>
-              </li>
-              <li>
-                <a href="team.html" class="text-silver footer-link">Team</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 col-lg-2">
-            <h3 class="text-subtitle c-white mb-0 mb-lg-4 mt-5 mt-lg-0"> Navigation </h3>
-            <ul class="footer-links">
-              <li>
-                <a href="index.html" class="text-silver footer-link">Documentation</a>
-              </li>
-              <li>
-                <a href="index.html" class="text-silver footer-link">Privacy</a>
-              </li>
-              <li>
-                <a href="about.html" class="text-silver footer-link">Therapy</a>
-              </li>
-              <li>
-                <a href="contact.html" class="text-silver footer-link">Contact</a>
-              </li>
-              <li>
-                <a href="blog-post.html" class="text-silver footer-link">Blog Post</a>
-              </li>
-              <li>
-                <a href="index.html" class="text-silver footer-link">Cookies</a>
-              </li>
-            </ul>
-          </div>
+
+        <div class="d-flex gap-2 mt-2 col-12  ">
+          <a href="https://facebook.com/GauravAstroReiki" class="icon-circle-32 bg-grey"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com/gaurav_astroreiki" class="icon-circle-32 bg-grey"><i class="fa-brands fa-instagram"></i></a>
+          <!-- <a href="#" class="icon-circle-32 bg-grey"><i class="fa-brands fa-youtube"></i></a> -->
+          <a href="https://linkedin.com/company/gauravastroreiki" class="icon-circle-32 bg-grey"><i class="fa-brands fa-linkedin"></i></a>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Footer End -->
+
+
+<div class="footer-grid mt-2 pb-5">
+ 
+  <div class="col-3 mb-4">
+<h3 class="text-subtitle c-white mb-4">Contact</h3>
+<p class="contact2 mb-2">WhatsApp/Call : +91 9834321492</p>
+<p class="contact2 mb-2">Email : gauravajain312@gmail.com</p>
+</div>
+ 
+ 
+  <div class=" address col-4 ms-5 mb-4 ">
+<h3 class="text-subtitle c-white mb-4">Address</h3>
+<p class="address1">Mayureshwar, Pimple Saudagar,<br>Pune - 411027</p>
+</div>
+ 
+<div class=" explore col-4 ms-4 ">
+<h3 class="text-subtitle c-white mb-4">Explore</h3>
+<ul class="list-unstyled mb-0 footer-links">
+<li><a href="https://belbasket.in/stage/index.html" class="footer-link">Home</a></li>
+<li><a href="https://belbasket.in/stage/about.html" class="footer-link">About Me</a></li>
+<li><a href="https://belbasket.in/stage/reviews.html" class="footer-link">Reviews</a></li>
+<li><a href="https://belbasket.in/stage/contact.html" class="footer-link">Contact</a></li>
+</ul>
+</div>
+ 
+</div>
+</footer>
+    <!-- Footer End -->
+
        <script>
   document.addEventListener("DOMContentLoaded", function () {
     const menu = document.getElementById("courseDropdownMenu");
@@ -914,6 +856,14 @@
     items.forEach(item => menu.appendChild(item));
   });
 </script>
+<script>
+document.querySelectorAll('.dropdown-toggle').forEach(function (dropdown) {
+  dropdown.addEventListener('click', function (event) {
+    event.stopPropagation(); // prevents offcanvas from closing
+  });
+});
+</script>
+
   <script src="lib/js/bootstrap.bundle.min.js"></script>
   <script src="lib/js/swiper-bundle.min.js"></script>
   <script src="js/index.js"></script>
